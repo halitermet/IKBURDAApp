@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8EA7E9;
+  padding: 10px 0px 10px 20px;
+  z-index: 20;
+  height: 80px;
+  top:0;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ik-burada {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-container p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media(max-width:600px){
+  .ik-burada {
+    font-size: 20px;
+  }
+  
+  .title-container p {
+    font-size: 14px;
+  }
+}
+
+.navbar-user-photo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #E5E0FF;
+  top: 72px;
+  right: 0;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 1000;
+  width: 200px;
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 16px; 
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item.admin:hover {
+  background-color: #7286D3; 
+  color: #fff;
+}
+
+.dropdown-item.manager:hover {
+  background-color: #E5E1DA; 
+  color: #fff;
+}
+
+.dropdown-item.employee:hover {
+  background-color: #F1E5D1; 
+}
+
+.dropdown-menu .logout-button {
+  color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  margin: 20px auto; 
+  display: block;
+}
+
+.dropdown-menu .logout-button.admin:hover {
+  background-color: #8EA7E9;
+}
+
+.dropdown-menu .logout-button.manager:hover {
+  background-color: #92C7CF;
+}
+
+.dropdown-menu .logout-button.employee:hover {
+  background-color: #F1E5D1;
+}
+
+.resim {
+  width: 70px;
+  height: 50px;
+  padding-right: 20px;
+}
+
+.navbar.admin {
+  background-color: #8EA7E9;
+}
+
+.navbar.manager {
+  background-color: #92C7CF; 
+}
+
+.navbar.employee {
+  background-color: #C39898; 
+}
+
+.dropdown-menu .admin{
+  background-color: #E5E0FF;
+}
+
+.dropdown-menu.manager {
+  background-color: #AAD7D9;
+}
+
+.dropdown-menu.employee {
+  background-color: #DBB5B5;
+}
+
+.dropdown-menu .logout-button.manager{
+  background-color: #E5E1DA;
+  color: rgb(25, 24, 24);
+}
+.dropdown-menu .logout-button.admin{
+  background-color: #7286D3;
+  color: rgb(25, 24, 24);
+}
+
+.dropdown-menu .logout-button.employee{
+  background-color: #C39898;
+  color: rgb(25, 25, 25);
+}

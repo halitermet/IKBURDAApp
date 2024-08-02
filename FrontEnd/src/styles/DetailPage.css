@@ -1,0 +1,136 @@
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #004080; 
+}
+
+.error {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #ff0000; 
+}
+
+.user-detail-card {
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 30px;
+  background-color: #ffffffc0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(71, 95, 204);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-detail-card.employee{
+  border: 1px solid rgb(195, 152, 152);
+}
+
+
+
+.user-detail-card h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #7286D3;
+}
+
+.user-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-left: 60px;
+  border: 1px solid #a291ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  flex: 1;
+  padding-left: 120px; 
+}
+
+.user-info p {
+  font-size: 1em;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.user-info p strong {
+  font-weight: bold;
+  color: #7286D3;
+}
+
+.user-info.manager p strong {
+  font-weight: bold;
+  color: #5a8285;
+}
+.user-info.employee p strong {
+  font-weight: bold;
+  color: #987070;
+}
+
+h2.employee{
+  color:#987070;
+}
+
+h2.manager{
+  color:#5a8285;
+}
+
+@media (max-width: 1140px) {
+  .user-detail-card {
+    margin-top:100px;
+    margin-left:240px;
+    margin-right:20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-photo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .user-info {
+    padding-left: 0; /* Mobilde padding kaldırıldı */
+  }
+
+  .loading, .error {
+    font-size: 1em;
+  }
+
+  .user-info p {
+    font-size: 0.9em;
+  }
+}
+
+@media(max-width:700px){
+  .user-detail-card {
+    margin-top: 120px;
+    margin-left: 80px;
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .user-detail-card {
+    margin-top: 120px;
+    margin-left: 60px;
+    padding: 10px;
+  }
+
+  .loading, .error {
+    font-size: 0.9em;
+  }
+
+  .user-info p {
+    font-size: 0.9em;
+  }
+}

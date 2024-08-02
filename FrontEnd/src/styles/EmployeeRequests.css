@@ -1,0 +1,142 @@
+.employee-requests-container {
+  padding: 20px;
+  margin-left: 220px; 
+  margin-top: 100px;
+}
+
+.employee-requests-title {
+  margin-bottom: 20px;
+  color: rgb(106, 155, 159);
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-container label {
+  display: flex;
+  flex-direction: column;
+  color: rgb(106, 155, 159);
+}
+
+.filter-container select {
+  padding: 5px;
+  border: 1px solid rgb(106, 155, 159);
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(106, 155, 159);
+}
+
+.employee-requests-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 2px solid rgb(106, 155, 159);
+  border-radius: 10px;
+  color: rgb(106, 155, 159);
+  font-size: 18px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.employee-requests-popup.approve {
+  border-color: rgb(106, 155, 159);
+  background-color: white;
+}
+
+.employee-requests-popup.reject {
+  border-color: rgb(192, 57, 43); 
+  background-color: rgb(192, 57, 43); 
+  color: white;
+}
+
+.employee-requests-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.employee-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-requests-table th,
+.employee-requests-table td {
+  border: 1px solid rgb(106, 155, 159);
+  padding: 8px;
+  text-align: left;
+}
+
+.employee-requests-table th {
+  background-color: rgb(106, 155, 159);
+  color: white;
+}
+
+.employee-requests-approve-button,
+.employee-requests-reject-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.employee-requests-approve-button {
+  background-color: rgb(106, 155, 159);
+  margin-right: 10px; /* Butonlar arasında boşluk */
+}
+
+.employee-requests-approve-button:hover {
+  background-color: rgb(86, 125, 129);
+  transform: scale(1.05);
+}
+
+.employee-requests-approve-button:active {
+  background-color: rgb(66, 95, 99);
+}
+
+.employee-requests-reject-button {
+  background-color: rgb(192, 57, 43); 
+}
+
+.employee-requests-reject-button:hover {
+  background-color: rgb(172, 37, 23); 
+  transform: scale(1.05);
+}
+
+.employee-requests-reject-button:active {
+  background-color: rgb(142, 7, 3); 
+}
+
+.employee-requests-approve-button:disabled,
+.employee-requests-reject-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+ 
+@media(max-width: 835px) {
+  .employee-requests-container {
+    margin-left: 180px; 
+    margin-right: 30px;
+  }
+}
+
+@media(max-width: 770px) {
+  .employee-requests-container {
+    margin-left: 100px; 
+    margin-right: 60px;
+  }
+}
+
+@media(max-width: 670px) {
+  .employee-requests-container {
+    margin-left: 50px; 
+  }
+}

@@ -1,0 +1,50 @@
+
+  
+  .tableHead {
+    background-color: #f5f5f5;
+  }
+  
+  .tableRow th,
+  .tableRow td {
+    min-width: 150px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tableRow th,
+    .tableRow td {
+      min-width: 100px;
+      font-size: 0.875rem;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tableRow th,
+    .tableRow td {
+      min-width: 80px;
+      font-size: 0.75rem;
+      padding: 4px;
+    }
+  }
+  .main-container{
+   margin-left: 220px;
+   margin-right: 80px;
+   margin-top: 120px;
+
+  }
+  .btnAta{
+    width: 70%;
+    background: #8EA7E9;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .btnAta:hover{
+    background: #4973e6;
+  }
+  

@@ -1,0 +1,87 @@
+.update-form-container {
+  max-width: 500px;
+  margin: 140px auto;
+  padding: 20px;
+  border: 1px solid rgb(71, 95, 204);
+  background-color: #ffffffc0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-form-container.manager{
+  border: 1px solid #4a9296;
+}
+
+.update-form-container.employee{
+  border: 1px solid #C39898;
+}
+
+.btn.manager{
+  background-color: #4a9296;
+}
+.btn.manager:hover{
+  background-color: #69bdc2;
+}
+
+.btn.employee{
+  background-color: #C39898;
+}
+.btn.employee:hover{
+  background-color: #DBB5B5;
+}
+
+@media (max-width: 647px) {
+  .update-form-container {
+    margin-left: 50px; 
+    padding-left: 20px; 
+    margin-right: 10px;
+  }
+}
+
+.update-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.update-profile-photo {
+  display: block;
+  margin: 10px auto;
+  width: 100px;  
+  height: 100px; 
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+.hata {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.basarili {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input-error {
+  color: rgb(226, 29, 29);
+  font-size: 0.9em;
+  margin-top: 5px;
+}

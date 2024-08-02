@@ -1,0 +1,109 @@
+.advance-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advance-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.styled-radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.styled-radio {
+  padding: 0.5rem 2rem;
+  border: 2px solid #C39898; 
+  background-color: white;
+  color: #C39898; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.styled-radio input {
+  display: none;
+}
+
+.styled-radio.active {
+  background-color: #C39898; 
+  color: white;
+}
+
+.styled-radio.active::before {
+  border: 2px solid white;
+  background-color: white;
+}
+
+.styled-radio::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #C39898; 
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.advance-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.advance-form input[type="number"], 
+.advance-form textarea, 
+.advance-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.advance-form textarea {
+  resize: vertical;
+}
+
+.advance-form button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #C39898; 
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.advance-form button[type="submit"]:hover {
+  background-color: #a67676; 
+}
+
+.advance-error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.advance-success {
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}

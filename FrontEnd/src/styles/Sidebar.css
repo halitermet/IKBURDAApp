@@ -1,0 +1,167 @@
+.sidebar {
+  width: 200px;
+  background-color: #E5E0FF;
+  padding: 20px;
+  height: calc(100vh - 80px); 
+  position: fixed; 
+  top: 80px; 
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s, padding 0.3s;
+  z-index: 10; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar.closed {
+  width: 60px;
+  padding: 20px 10px;
+}
+
+.manager-sidebar {
+  background-color: #FBF9F1;
+}
+
+.employee-sidebar {
+  background-color: #F1E5D1;
+}
+
+.menu {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.menu-item .sbIconKapsayici {
+  font-size: 1.7em;
+  margin-right: 10px; 
+}
+
+.sidebar.closed .menu-item .menu-text {
+  display: none;
+}
+
+.menu li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #3532e0;
+}
+
+.menu li a .sbIcon {
+  font-size: 1.5em;
+  margin-right: 10px; 
+}
+
+.menu li a .menu-text {
+  margin-left: 10px;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar.closed .menu li a .menu-text {
+  display: none;
+}
+
+.sidebar.closed .menu li a .sbIcon {
+  margin-left: 5px;
+}
+
+.menu.show {
+  display: block;
+}
+
+.submenu {
+  padding-left: 20px;
+}
+
+.sidebar.closed .submenu {
+  padding-left: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 160px;
+  }
+
+  .sidebar.closed {
+    width: 60px;
+  }
+
+  .menu li a {
+    font-size: 0.9em;
+  }
+
+  .menu li a .sbIcon {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 120px;
+  }
+
+  .sidebar.closed {
+    width: 50px;
+  }
+
+  .sidebar.open {
+    padding-left: 5px;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+  .menu li a {
+    font-size: 0.8em;
+  }
+
+  .menu li a .sbIcon {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .sidebar.closed {
+    width: 40px;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu li a {
+    font-size: 0.7em;
+  }
+
+  .menu li a .sbIcon {
+    font-size: 1em;
+  }
+}

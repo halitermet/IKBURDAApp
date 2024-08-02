@@ -1,0 +1,99 @@
+.company-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px; 
+  margin-top: 100px;
+  margin-left: 250px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #ffffffc0;
+}
+
+.company-form label {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 15px; 
+  font-size: 14px; 
+}
+
+.company-form input,
+.company-form select {
+  padding: 6px; 
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px; 
+}
+
+.company-form select {
+  appearance: none;
+  background-color: white;
+}
+
+.company-form select:focus,
+.company-form input:focus {
+  outline: none;
+  border-color: #7286D3;
+  box-shadow: 0 0 5px rgba(114, 134, 211, 0.5);
+}
+
+.company-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7286D3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.company-form button:hover {
+  background-color: #8EA7E9;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.success {
+  color: green;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.company-form-h2 {
+  text-align: center;
+  padding: 10px;
+  color: #7286D3;
+  width: 100%;
+  font-size: 24px; 
+}
+
+@media (max-width: 768px) {
+  .company-form {
+    margin-top: 100px;
+    margin-left:100px;
+    padding: 10px;
+  }
+  .company-form label {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-form {
+    margin-top: 100px;
+    margin-left:80px;
+    padding: 10px;
+  }
+}
